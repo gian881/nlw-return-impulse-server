@@ -9,6 +9,6 @@ app.use(cors());
 app.use(express.json());
 app.use(routes);
 
-app.listen(PORT,() => {
-    console.log(`Server running on http://localhost:${PORT}`);
+app.listen(process.env.PORT || PORT,() => {
+    console.log(`HTTP Server Running!`);
 });
